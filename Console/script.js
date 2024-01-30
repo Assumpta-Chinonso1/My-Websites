@@ -50,12 +50,12 @@
 
    console.log(firstBook);
 
-   //step 4
+   //step 4s
 
    const libraryJSon = JSON.stringify(library)
 
-   console.log(libraryJSon);
+   console.log(libraryJSon)
 
    function sayHi() {
-     console.log('Good Morning');
+     console.log('Good Morning ');
    }

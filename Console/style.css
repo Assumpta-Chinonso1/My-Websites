@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background: #222;
+}
+
+.card{
+    width: 99%;
+    max-width: 470%;
+    background: linear-gradient();
+}
+

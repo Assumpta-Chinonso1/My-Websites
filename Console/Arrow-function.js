@@ -28,3 +28,20 @@ console.log(add(1, 2));
 console.log(subtract (4, 2) );
 console.log(doube(20));
 console.log(creatObj());
+
+  (function () {
+const user = 'Susu'
+console.log(user);
+const hello = () => console.log('Hello from the star girl');
+hello()
+})();
+
+(function (name) {
+    console.log('Hello ' + name);
+    
+})('Amakass')
+
+
+
+
+

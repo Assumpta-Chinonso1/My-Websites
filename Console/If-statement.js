@@ -40,7 +40,7 @@ if (a < b) {
         console.log("A");
      }
 
-     const d = new Date (15, 2, 2024, 19, 0, 0)
+     const d = new Date (15, 2, 2024, 0, 0, 0)
 
      const hour = d.getHours()
 
@@ -99,7 +99,57 @@ if (a < b) {
         console.log("You're Eligible");
         }                            
          }
+
+         //Switche statement
+           const days = new Date (2024, 2, 16, 18, 0, 0)
+           const month = days.getMonth()
+           const hours = days.getHours()
+
+         switch (month) {
+            case 1:
+               console.log("It's January");
+               break;
+
+               case 2:
+                  console.log("It's Feburary");
+                  break;
+                    case 3:
+                     console.log("It's March");
+                     
+         }
+                
+              switch (true) {
+               case hours < 10:
+                  console.log("Good Mornings");
+                  
+                  break;
+
+                  case hours < 1:
+                     console.log("Good Afternoons");
+                     break;
+
+                     case hours > 15:
+                        console.log("Good Day");
+
+
+              }
+
+
+
+         const favFood = "Rice"
+         switch (favFood) {
+            case "Noodles":
+               console.log("I love eating Noodles");
+               
+               break;
+
+               case "Beans":
+               console.log("oh! it's Beans I love eating");
          
+            default:
+               console.log("Nil it's neither Noodles or Beans");
+               break;
+         }
 
 
 

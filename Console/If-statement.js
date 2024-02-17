@@ -100,7 +100,7 @@ if (a < b) {
         }                            
          }
 
-         //Switche statement
+         //Switch statement
            const days = new Date (2024, 2, 16, 18, 0, 0)
            const month = days.getMonth()
            const hours = days.getHours()
@@ -122,14 +122,14 @@ if (a < b) {
                case hours < 10:
                   console.log("Good Mornings");
                   
-                  break;
+                 break;
 
                   case hours < 1:
                      console.log("Good Afternoons");
                      break;
 
                      case hours > 15:
-                        console.log("Good Day");
+                       console.log("Good Day");
 
 
               }
@@ -147,10 +147,20 @@ if (a < b) {
                console.log("oh! it's Beans I love eating");
          
             default:
-               console.log("Nil it's neither Noodles or Beans");
+               console.log("Nil it's neither Noodles nor Beans");
                break;
          }
 
+        if (favFood) {
+         if (favFood === "Noodles") {
+            console.log("I love eating Noodles");
+         }
+      }else if (favFood === "Beans") {
+         console.log("Oh! it's Beans I love eating");
+      }else{
+         console.log("Nil it's neither Noodles nor Beans");
+      }
+       
 
 
 

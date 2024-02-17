@@ -8,15 +8,15 @@ console.log(Boolean(email));
 
          //falsy Values
            
-         const grade = "A1"
+         const grades = "A1"
 
-         if (grade) {
+         if (grades) {
             console.log("This is Truthy");
          }else{
             console.log("This is Falsy");
          }
 
-         console.log(Boolean(grade));
+         console.log(Boolean(grades));
 
 
          // Truthy and Falsy Caveats
@@ -43,9 +43,9 @@ console.log(Boolean(email));
            
          //Checking for objects
 
-         const age = {}
+         const ages = {}
 
-         if (age) {
+         if (ages) {
             console.log("This is my age");
          }else{
             console.log("This is not my age");

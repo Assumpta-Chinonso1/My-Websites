@@ -1,16 +1,17 @@
   // ||=
-let x = 20
+let x = 0;
 
-if (!x) {
+if ( x ||= 10 ) {
  //  x = 10 
+ console.log(x);
 }
   
 //x = x || 10
 
-x ||= 10
+  //x ||= 10
 
 
-console.log(x);
+ //console.log(x);
 
 //&&=
 

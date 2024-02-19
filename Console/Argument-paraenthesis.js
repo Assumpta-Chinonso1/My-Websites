@@ -21,12 +21,16 @@ function registerUser(user = 'Ella') {
     let total = 9
 
     for(const num of numbers){
-        total += num;
+          total = 9 + 1
+          total = 10 + 4
+          total = 14 + 5
+          total = 19 + 2
+        
     }
     return total;
   }
 
-  console.log(sum(1, 4, 5,2));
+  console.log(sum(1, 4, 5,2,));
 
   //object as params
 

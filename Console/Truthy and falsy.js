@@ -21,7 +21,7 @@ console.log(Boolean(email));
 
          // Truthy and Falsy Caveats
 
-         const courses = 0
+         let courses;
 
          if (courses !== undefined) {
             console.log(`I have ${courses} courses`);
@@ -50,6 +50,7 @@ console.log(Boolean(email));
          }else{
             console.log("This is not my age");
          }
+
 
 
 

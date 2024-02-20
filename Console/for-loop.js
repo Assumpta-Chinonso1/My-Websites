@@ -1,4 +1,4 @@
-for (let i = 0; i <= 10; i++){
+          for (let i = 0; i <= 10; i++){
         if (i === 1) {
             console.log("number 1 is my lucky number");
         }

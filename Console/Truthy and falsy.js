@@ -1,9 +1,9 @@
-const email = "assumptachinonso42@gmail.com"
+    const email = "assumptachinonso42@gmail.com"
 
-if (email) {
-    console.log('I passed an email');
-}
-console.log(Boolean(email));
+         if (email) {
+           console.log('I passed an email');
+           }
+           console.log(Boolean(email));
 
 
          //falsy Values

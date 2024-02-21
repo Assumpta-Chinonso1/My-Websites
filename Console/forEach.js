@@ -20,9 +20,6 @@ const socialMedias = ['Instagram', 'Twitter', 'Facebook', 'Linkdlin']
         {name:'Twitter', url:  'htttp://twitter.com'}, 
          {name:'Facebook', url:  'htttp://Facebook.com'},  
          {name:'Linkdlin', url:  'htttp://linkdlin.com'},
-
-
-
-    ]
+           ]
 
     socialObj.forEach((item) => console.log(item.url));

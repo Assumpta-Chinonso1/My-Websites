@@ -1,4 +1,4 @@
-const numbers = [2, 4, 5, 6, 7, 8]
+const numbers = [2, 4, 5, 6, 7, 8, 9 ,10, 11, 12]
 
 //const doubleNumber = numbers.map((numbers) => numbers * 2)
 
@@ -46,4 +46,31 @@ const studentsNamess = students.map ((students) => {
 
 })
 console.log(studentsNamess);
+
+  //chain map methods
+
+  const squareAndDouble = numbers
+  .map((number) => Math.sqrt(number)) 
+  .map((sqrt) => sqrt * 2)
+
+  console.log(squareAndDouble);
+
+  const squareAndDouble2 = numbers
+  .map(function (numbers) {
+    return Math.sqrt(numbers)
+    
+  })
+.map(function (sqrtDoubled) {
+  return sqrtDoubled * 3
+  
+})
+console.log(squareAndDouble2);
+
+//Chaining different methods
+
+const evenNumber = numbers 
+.filter((number) => number % 2 === 0)
+.map((number) => number * 2)
+console.log(evenNumber);
+
 

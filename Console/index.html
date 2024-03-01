@@ -7,20 +7,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>        
-                <div id="main">
-                   <h1>DOM intro</h1>
-                   <a href="http://https://studio.youtube.com/channel/UCY2jIkB6xMHVm9kWNX7j41w/editing/images">
-                    Techbabe's youtube</a>
-                </div>
+                             <header>
+                              <img src="shopbag.jpg" alt="">
+                              <h1 id="app-title">Shopping List</h1>
+                             </header>
                 
-            
+                             <form id="item-form">
+                              <div class="form-control">
+                                <input type="text"
+                                class="form-input"
+                                id="item-input"
+                                name="item"
+                                placeholder="Enter Item">
+                              </div>
+                              <div class="form-control">
+                                <button type="submit" class="button">
+                                  <i class="fa-solid fa-plus"></i>Add Item
+                                </button>
+                              </div>
+                             </form>
 
+                             <div class="filter">
+                              <input
+                               type="text"
+                               class="form-input-filter"
+                               id="filter"
+                               placeholder="filter items" >
+                             
+
+                             <ul id="item-list" class="items">
+                              <li>
+                                Wigs
+                                <button class="remove-item btn-link text-red">
+                       <i class="fa-solid fa-xmark"></i>
+                                </button>
+                              </li> 
+
+                               <li>
+                                Shoe
+                                <button class="remove-item btn-link text-red">
+                                </button>
+
+                                  <li>
+                                    Clothes
+                                    <button class="remove-item btn-link text-red">
+                           <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                  </li>    
+                
+                               <li>
+                                Kitchen utensils
+                                <button class="remove-item btn-link text-red">
+                       <i class="fa-solid fa-xmark"></i>
+                                </button>
+                              </li>
+                              
+                             </ul>
+                             <button id="clear" class="btn-clear">Clear All
+
+                             </button>
+                            </div>
+          
 
 
 
   </body>
 </html>
-             <script src="DOM.js"></script>
+             <script src="DOM.selectors.single-elements.js"></script>
 
 </body>
 </html>

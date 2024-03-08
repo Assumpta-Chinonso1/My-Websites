@@ -66,3 +66,45 @@
  replaceSecondItem();
  replaceAllItems();
  replaceChildHeading()
+
+
+
+ //Remove Element
+
+ function removeClearButton() {
+
+    const  removeBtn = document.querySelector('#clear')
+   removeBtn .remove()
+    
+ }
+
+ function removeFirstItem() {
+
+    const ul = document.querySelector('ul')
+    const li = document.querySelector('li:first-child')
+
+      ul.removeChild(li)
+ }
+
+ function removeItem(itemNumber) {
+
+    const ul = document.querySelector('ul')
+    const li = document.querySelector(`li:nth-child(${itemNumber})`)
+
+    ul.removeChild(li)
+ }
+
+ function removeItem2(itemNumber) {
+
+    const ul = document.querySelector('ul')
+    const li = document.querySelectorAll('li') [itemNumber - 1]
+
+    ul.removeChild(li)
+ }
+
+
+
+
+ removeClearButton()
+ //removeFirstItem()
+ removeItem2(1)

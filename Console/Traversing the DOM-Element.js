@@ -58,7 +58,7 @@ output = secondItem.nextElementSibling
  output = childs.parentNodes;
  output = childs.parentElement;
 
- output = childs.parentNode.style.backgroundColor = 'Black'
+ output = childs.parentNode.style.backgroundColor = 'white'
 
  output = childs.parentNode.style.padding = '30px'
 
@@ -73,7 +73,40 @@ output = secondItems.nextElementSibling
  secondItems.nextElementSibling.style.color = 'green'
  secondItems.previousElementSibling.style.color = 'orange'
 
-
-
-
 console.log(output);
+
+
+
+
+//create and Append Element
+
+const div = document.createElement('div')
+div.className = 'my-element'
+div.id = 'my-element'
+div.setAttribute('title', 'My  Elemnt')
+
+  //div.innerText = 'Hello World'
+
+const text = document.createTextNode('Hello World')
+div.appendChild(text)
+
+  //document.body.appendChild(div)
+
+     document.querySelector('ul').appendChild(div)
+
+  //console.log(div);
+
+  function createNewItem(item) {
+    const li = document.createElement('li')
+
+    const button = document.createElement('button')
+                       
+    button.className = '   remove-item btn-link text-red '
+
+    const icon = document.createElement('i')
+    icon.className = " fa-solid fa-xmark "
+
+    console.log(button);
+    console.log(icon);
+    
+}

@@ -1,4 +1,4 @@
-             function insertAfter(newEl, existingEl) {
+        function insertAfter(newEl, existingEl) {
             existingEl.parentElement.insertBefore(newEl,existingEl.nextSibling);
     
      }
@@ -71,40 +71,91 @@
 
  //Remove Element
 
- function removeClearButton() {
+ //function removeClearButton() {
 
-    const  removeBtn = document.querySelector('#clear')
-   removeBtn .remove()
+    //const  removeBtn = document.querySelector('#clear')
+  // removeBtn .remove()
     
- }
+ //}
 
- function removeFirstItem() {
+   //function removeFirstItem() {
 
-    const ul = document.querySelector('ul')
-    const li = document.querySelector('li:first-child')
+   // const ul = document.querySelector('ul')
+   // const li = document.querySelector('li:first-child')
 
-      ul.removeChild(li)
- }
+     // ul.removeChild(li)
+/// }
 
- function removeItem(itemNumber) {
+// function removeItem(itemNumber) {
 
-    const ul = document.querySelector('ul')
-    const li = document.querySelector(`li:nth-child(${itemNumber})`)
+   // const ul = document.querySelector('ul')
+    //const li = document.querySelector(`li:nth-child(${itemNumber})`)
 
-    ul.removeChild(li)
- }
+    //ul.removeChild(li)
+ //}
 
- function removeItem2(itemNumber) {
+// function removeItem2(itemNumber) {
 
-    const ul = document.querySelector('ul')
-    const li = document.querySelectorAll('li') [itemNumber - 1]
+   // const ul = document.querySelector('ul')
+    //const li = document.querySelectorAll('li') [itemNumber - 1]
 
-    ul.removeChild(li)
- }
-
-
+   // ul.removeChild(li)
+// }
 
 
- removeClearButton()
+
+
+ //   removeClearButton()
  //removeFirstItem()
- removeItem2(1)
+  //removeItem2(1)
+
+
+ //Event Listeners
+
+      const clearBtn = document.querySelector('#clear')
+
+   function onClear() {
+       const itemList = document.querySelector('ul')
+       const items = itemList.querySelectorAll('li')
+
+    //   itemList.innerHTML = '';
+
+    //items.forEach((item) => item.remove())
+
+    while(itemList.firstChild){
+      itemList.removeChild(itemList.firstChild)
+    }
+   
+     }
+
+  
+
+ //Js Event Listener
+
+        //clearBtn.onclick = function () {
+          // alert('Clear Items')
+   
+        //  };
+
+         // clearBtn.onclick = function () {
+            //console.log('Clear Items');
+    
+          // }
+
+
+ //addEventListener
+
+    //clearBtn.addEventListener('click', () => alert('Clear Items'))
+
+    clearBtn.addEventListener('click', onClear);
+
+    //setTimeout(() => clearBtn.removeEventListener('click',onClear),300)
+
+    setTimeout(() => clearBtn.click(),5000)
+
+ 
+
+ 
+
+
+

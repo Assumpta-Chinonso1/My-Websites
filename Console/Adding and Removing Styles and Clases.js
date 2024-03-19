@@ -81,53 +81,132 @@
 
 //Keyboard Event and Keyboard Properties
 
-const itemInput = document.getElementById('item-input')
+//const itemInput = document.getElementById('item-input')
 
-     const onKeyPress = (e) => {
-     console.log('keypress');
-   };
+    // const onKeyPress = (e) => {
+    // console.log('keypress');
+   //};
 
-  const onKeyUp = (e)  => {
-  console.log('keyup');
-   }
+  //const onKeyUp = (e)  => {
+ // console.log('keyup');
+   //}
 
-const onKeyDown = (e)  => {
+     //const onKeyDown = (e)  => {
          //key
-       if (e.key === 'Enter') {
-        alert('You Pressed enter')
-       }
+       //if (e.key === 'Enter') {
+       // alert('You Pressed enter')
+      // }
 
          //keyCode
-            if (e.keyCode === 13) {
-              alert('You pressed enter')
+            //if (e.keyCode === 13) {
+             // alert('You pressed enter')
               
-            }
+          //  }
 
          //Code
 
-         if (e.code === 'Digit1') {
-          console.log('You pressed 1');
+        // if (e.code === 'Digit1') {
+          //console.log('You pressed 1');
           
-         }
-         if (e.repeat) {
-          console.log('You are holding down ' + e.key);
-         }
-         console.log('Shift ' + e.shiftKey);
-         console.log('Control ' + e.ctrlKey);
-         console.log('Alt: ' + e.altKey);
+        // }
+         //if (e.repeat) {
+        //  console.log('You are holding down ' + e.key);
+        // }
+        // console.log('Shift ' + e.shiftKey);
+         //console.log('Control ' + e.ctrlKey);
+         //console.log('Alt: ' + e.altKey);
 
 
-         if (e.shiftKey && e.key === 'k') {
-          console.log('You hit shift + k');
+        // if (e.shiftKey && e.key === 'k') {
+         // console.log('You hit shift + k');
           
-         }
-}
+        // }
+///}
 
 
 //itemInput.addEventListener('keypress', onKeyPress);
 
 //itemInput.addEventListener('keyup'. onKeyUp)
 
-itemInput.addEventListener('keydown', onKeyDown)
+//itemInput.addEventListener('keydown', onKeyDown)
 
 
+//Input Event
+         //const itemInputs = document.getElementById('item-input')
+             //const priorityInput = document.getElementById('priority-input')
+         //const checkBox = document.getElementById('checkbox')
+       //const heading = document.querySelector('h1')
+
+    //function onInput(e) {
+  //heading.textContent = e.target.value;
+  
+    //}
+////function onChecked(e) {
+  
+  //const isChecked = e.target.checked;
+
+  //heading.textContent = isChecked ? 'Checked' : 'Not Checked'
+    ///}
+       //function onFcus(e) {
+
+        //console.log('Input is Focused');
+         //itemInputs.style.outlineStyle = 'solid'
+         //itemInputs.style.outlineWidth = '1px'
+         //itemInputs.style.outlineColor = 'red'
+        
+       //}
+
+       //function onBlur() {
+
+          // console.log('Input is not Focus');
+        //itemInputs.style.outlineStyle = 'none'
+       //}
+///itemInputs.addEventListener('keydown', onInput)
+//priorityInput.addEventListener('change', onInput)
+//checkBox.addEventListener('input', onChecked)
+  //itemInputs.addEventListener('focus', onFcus)
+    //itemInputs.addEventListener('blur', onBlur)
+
+
+
+//Form Submission and Form Data Object
+
+const form = document.getElementById('item-form')
+
+function onSubmit(e) {
+  e.preventDefault ();
+  
+  const item = document.getElementById('item-input').value;
+  const priority = document.getElementById('priority-input')
+  
+  if (item === '' || priority === '0') {
+    alert('please fill in all fields')
+    return;
+  }
+
+  console.log(item, priority);
+}
+
+function onSubmit2(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form)
+  const item = formData.get('item')
+
+  const priority = formData.get('priority')
+
+  const entries = formData.entries()
+
+  //console.log(entries);
+
+  for (let entry of entries) {
+    console.log(entry[1]);
+    
+    
+  }
+
+  //console.log(item, priority);
+
+}
+
+form.addEventListener('submit', onSubmit2)

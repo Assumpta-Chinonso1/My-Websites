@@ -225,9 +225,9 @@ button.addEventListener('click', (e) => {
   alert('The button was clicked')
   e.stopPropagation();
 })
-div.addEventListener('click', () =>  {
-  alert('Div was clicked')
-})
+  //div.addEventListener('click', () =>  {
+  //alert('Div was clicked')
+   //})
 
 forms.addEventListener('click', () => {
   alert('Form was clicked')
@@ -236,3 +236,33 @@ forms.addEventListener('click', () => {
 document.body.addEventListener('click', () => {
   alert('body was Clicked')
 })
+
+//Even Delegation and Multiple elements
+const listIems = document.querySelectorAll('li')
+const list = document.querySelector('ul')
+
+
+   //listIems.forEach((items) => {
+   //items.addEventListener('click', (e) =>{
+  ///   e.target.remove();
+ // })
+//})
+
+list.addEventListener('click', (e) =>{
+  if (e.target.tagName === 'LI') {
+    e.target.remove();
+    
+  }
+})
+
+
+list.addEventListener('mouseover', (e) =>{
+  if (e.target.tagName === 'LI') {
+    e.target.style.color = 'green';
+    
+  }
+})
+
+
+
+

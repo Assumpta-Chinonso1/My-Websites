@@ -210,3 +210,29 @@ function onSubmit2(e) {
 }
 
 form.addEventListener('submit', onSubmit2)
+
+
+
+//Event Bubbling
+const button = document.querySelector('form button');
+
+const div = document.querySelector('form div:nth-child(2)')
+
+const forms = document.querySelector('form')
+
+
+button.addEventListener('click', (e) => {
+  alert('The button was clicked')
+  e.stopPropagation();
+})
+div.addEventListener('click', () =>  {
+  alert('Div was clicked')
+})
+
+forms.addEventListener('click', () => {
+  alert('Form was clicked')
+})
+
+document.body.addEventListener('click', () => {
+  alert('body was Clicked')
+})
